@@ -24,8 +24,8 @@ public class Zoo implements ZooInterface{
 	}
 	
 	public void feedAnimals() {
-		for(Animal a : animalList) {
-			zookeeper.feed(a);
+		for(Animal animal : animalList) {
+			zookeeper.feed(animal);
 		}
 	}
 
