@@ -9,8 +9,9 @@ import ro.ase.cts.readers.AngajatiReader;
 import ro.ase.cts.readers.IReader;
 
 public class Program {
-	
-	public static List<Aplicant> citesteAplicanti(IReader readAplicant) throws NumberFormatException, FileNotFoundException{
+
+	public static List<Aplicant> citesteAplicanti(IReader readAplicant)
+			throws NumberFormatException, FileNotFoundException {
 		return readAplicant.readAplicanti();
 	}
 
@@ -18,7 +19,7 @@ public class Program {
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = citesteAplicanti(new AngajatiReader("angajati.txt"));
-			for(Aplicant aplicant:listaAplicanti)
+			for (Aplicant aplicant : listaAplicanti)
 				System.out.println(aplicant.toString());
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
