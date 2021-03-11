@@ -11,6 +11,10 @@ public class Student extends Aplicant {
 		return sumaFinantare;
 	}
 
+	public static float getSumaFinanta() {
+		return sumaFinantare;
+	}
+
 	public static void setSumaFinantare(float sumaFinantare) {
 		Student.sumaFinantare = sumaFinantare;
 	}
@@ -45,9 +49,11 @@ public class Student extends Aplicant {
 
 	@Override
 	public String toString() {
-		return "Student: Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj
-				+ ", Nr_proiecte=" + nr_proiecte + ", DenumiriProiecte=" + Arrays.toString(denumiriProiecte)
-				+ "Facultate=" + facultate + ", An_studii=" + an_studii;
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("Angajat: ").append(super.toString()).append(", ").append("Facultate=").append(facultate)
+				.append(", ").append("An_studii=").append(an_studii);
+		return stringBuilder.toString();
+
 	}
 
 }
