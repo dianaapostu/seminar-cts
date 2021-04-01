@@ -1,8 +1,8 @@
-package ro.ase.cts.program;
+package ro.ase.cts.program.builder;
 
-import ro.ase.cts.clase.Rezervare;
-import ro.ase.cts.clase.RezervareBuilder;
-import ro.ase.cts.clase.RezervareBuilderV2;
+import ro.ase.cts.clase.builder.Rezervare;
+import ro.ase.cts.clase.builder.RezervareBuilder;
+import ro.ase.cts.clase.builder.RezervareBuilderV2;
 
 public class Program {
 	
