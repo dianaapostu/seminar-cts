@@ -1,4 +1,4 @@
-package ro.ase.cts.program;
+package ro.ase.cts.program.facade;
 
 import ro.ase.cts.clase.facade.Persoana;
 import ro.ase.cts.clase.facade.VerificatorPersoane;
