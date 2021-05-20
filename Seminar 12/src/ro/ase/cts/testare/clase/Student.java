@@ -38,6 +38,7 @@ public class Student {
             return note.get(index);
         }
         throw new IndexOutOfBoundsException();
+        //return 0;
     }
 
     public float calculeazaMedie(){
