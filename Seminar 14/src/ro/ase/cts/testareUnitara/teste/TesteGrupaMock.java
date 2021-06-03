@@ -4,9 +4,11 @@ package ro.ase.cts.testareUnitara.teste;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import ro.ase.cts.testareUnitara.clase.Grupa;
 import ro.ase.cts.testareUnitara.clase.IStudent;
+import ro.ase.cts.testareUnitara.teste.categorii.GetPromovabilitateCategory;
 import ro.ase.cts.testareUnitara.teste.mocks.DummyStudent;
 import ro.ase.cts.testareUnitara.teste.mocks.FakeStudent;
 import ro.ase.cts.testareUnitara.teste.mocks.StubStudent;
@@ -23,6 +25,7 @@ public class TesteGrupaMock {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testGetPromovabilitate() {
 		IStudent student = new StubStudent();
 		Grupa grupa = new Grupa(1001);
@@ -32,6 +35,7 @@ public class TesteGrupaMock {
 	}
 	
 	@Test
+	@Category(GetPromovabilitateCategory.class)
 	public void testGetPromovabilitateFakeStudent() {
 		Grupa grupa = new Grupa(1001);
 		for(int i = 0; i < 8; i++) {
